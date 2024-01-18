@@ -1,0 +1,141 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+    --dark-color-lighten: #f2f5ff;
+    --red-card: #a62121;
+    --blue-card: #4bb7e6;
+    --btn: #141414;
+    --btn-hover: #3a3a3a;
+    --text: #fbf7f7;
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--dark-color-lighten);
+}
+
+h3{
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: var(--text);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+p{
+    font-size: 1.3rem;
+    color: var(--text);
+    text-align: center;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    margin: 0 auto;
+    width: 70%;
+    height: 100vh;
+   /*  background-color: var(--btn-hover); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.red-container{
+    background-color: var(--red-card);
+    width: 350px;
+    height: 450px;
+    border-radius: 1.5rem;
+    box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+}
+
+.red-container:hover .nike-red img{
+    transform:translate(-1.5rem, -7rem) rotate(-20deg);
+    transition: 500ms ease-in-out;
+}
+
+.blue-container{
+    background-color: var(--blue-card);
+    width: 350px;
+    height: 450px;
+    border-radius: 1.5rem;
+    box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+}
+
+.blue-container:hover .nike-blue img{
+    transform: translate(-1.5rem, -7rem) rotate(-20deg);
+    transition: 500ms ease-in-out;
+}
+
+.nike-red, .nike-blue{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    transform: translate(0, -1.5rem);
+    transition: transform 500ms ease-in-out;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+
+.nike-red img, .nike-blue img{
+    width: 300px;
+    user-select: none;
+}
+
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.buy-now{
+    width: 200px;
+    height: 30px;
+    padding: 5px ;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.buy-now:hover{
+    background-color: var(--btn-hover);
+    transition: 500ms ;
+}
+
+.star{
+    height: 40px;
+    border: .5px solid var(--btn);
+    border-radius: 5px;
+}
+
+.star .norms-img img{
+    width: 20px;
+}
+
+.star .hover img{
+    width: 20px;
+    transition: 500ms ease;
+    display: none;
+}
+
+.star:hover .norms-img img{
+    display: none;
+}
+
+.star:hover .hover img{
+    display: block;
+}
+
+
+
